@@ -32,6 +32,7 @@ drawable ic_settings
 drawable ic_stop
 drawable ic_upload
 drawable ic_visibility
+drawable ic_visibility_off
 drawable status_dot_error
 drawable status_dot_generating
 drawable status_dot_idle

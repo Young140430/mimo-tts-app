@@ -36,10 +36,10 @@
     <string name="btn_upload_audio">上传音频</string>
     <string name="clear_settings">清除</string>
     <string name="cleared">已清除</string>
-    <string name="context_hint">描述期望的语气、语速、情感…</string>
-    <string name="context_label">风格控制</string>
+    <string name="context_hint">预置音色：描述语气语速；音色设计：描述期望的声音特征…</string>
+    <string name="context_label">风格/音色描述</string>
     <string name="enter_text_first">请先输入要合成的文字</string>
-    <string name="help_message">1. 在「API 地址」中填入 MiMo API 地址（默认已填）\n2. 必须填写 API Key\n3. 选择 TTS 模式：\n   • 预置音色：选择内置音色，可选填风格描述\n   • 音色克隆：上传参考音频克隆音色\n   • 音色设计：通过文字描述设计独特音色\n4. 风格控制：用自然语言描述期望的语气、语速等\n5. 输出格式固定为 WAV</string>
+    <string name="help_message">1. 在「API 地址」中填入 MiMo API 地址（默认已填）\n2. 必须填写 API Key\n3. 选择 TTS 模式：\n   • 预置音色：选择内置音色，可选填风格描述\n   • 音色克隆：上传参考音频克隆音色\n   • 音色设计：通过文字描述设计独特音色（必须填写风格描述）\n4. 风格/音色描述：\n   • 预置音色模式：描述语气、语速、情感（可选）\n   • 音色设计模式：描述期望的声音特征（必填）\n5. 音色设计不支持预置音色、音色克隆和唱歌模式\n6. 输出格式固定为 WAV</string>
     <string name="help_title">使用说明</string>
     <string name="mode_preset">预置音色</string>
     <string name="mode_voiceclone">音色克隆</string>

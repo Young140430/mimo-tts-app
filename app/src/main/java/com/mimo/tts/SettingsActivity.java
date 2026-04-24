@@ -111,10 +111,11 @@ public class SettingsActivity extends AppCompatActivity {
         layoutRefAudioHint.setVisibility(
                 Constants.TTS_MODE_VOICECLONE.equals(ttsMode) ? View.VISIBLE : View.GONE);
 
-        // Show/hide voice spinner for voiceclone (voice is ref audio, not preset)
+        // Show/hide voice spinner for voiceclone (voice is ref audio) and voicedesign (no voice support)
         LinearLayout layoutVoice = findViewById(R.id.layout_voice);
         layoutVoice.setVisibility(
-                Constants.TTS_MODE_VOICECLONE.equals(ttsMode) ? View.GONE : View.VISIBLE);
+                (Constants.TTS_MODE_VOICECLONE.equals(ttsMode) || Constants.TTS_MODE_VOICEDESIGN.equals(ttsMode))
+                        ? View.GONE : View.VISIBLE);
     }
 
     private void loadSettings() {
@@ -198,8 +199,10 @@ public class SettingsActivity extends AppCompatActivity {
     private void updateApiKeyVisibility() {
         if (showApiKey) {
             inputApiKey.setInputType(EditorInfo.TYPE_CLASS_TEXT | EditorInfo.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            btnToggleVisibility.setImageResource(R.drawable.ic_visibility_off);
         } else {
             inputApiKey.setInputType(EditorInfo.TYPE_CLASS_TEXT | EditorInfo.TYPE_TEXT_VARIATION_PASSWORD);
+            btnToggleVisibility.setImageResource(R.drawable.ic_visibility);
         }
         inputApiKey.setSelection(inputApiKey.getText().length());
     }

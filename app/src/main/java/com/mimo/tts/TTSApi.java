@@ -78,7 +78,10 @@ public class TTSApi {
             // Build audio config
             JSONObject audioConfig = new JSONObject();
             audioConfig.put("format", "wav");
-            audioConfig.put("voice", voice);
+            // voicedesign mode does not support voice field
+            if (!Constants.TTS_MODE_VOICEDESIGN.equals(ttsMode)) {
+                audioConfig.put("voice", voice);
+            }
 
             // Build payload
             JSONObject payload = new JSONObject();

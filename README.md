@@ -70,6 +70,8 @@ mimo-tts-app.apk
 
 ### API 调用
 
+**预置音色 / 音色克隆模式：**
+
 ```
 POST /chat/completions
 Content-Type: application/json
@@ -80,14 +82,42 @@ Authorization: Bearer <API_KEY>
   "messages": [
     {
       "role": "user",
-      "content": "<|audio_start|>...<|audio_end|>要合成的文字"
+      "content": "风格描述（可选）"
+    },
+    {
+      "role": "assistant",
+      "content": "要合成的文字"
     }
   ],
   "audio": {
     "format": "wav",
     "voice": "茉莉"
-  },
-  "context": "风格描述（可选）"
+  }
+}
+```
+
+**音色设计模式**（不支持 `voice` 字段、预置音色、音色克隆、唱歌模式）：
+
+```
+POST /chat/completions
+Content-Type: application/json
+Authorization: Bearer <API_KEY>
+
+{
+  "model": "mimo-v2.5-tts-voicedesign",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Give me a young male tone."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I had a sandwich."
+    }
+  ],
+  "audio": {
+    "format": "wav"
+  }
 }
 ```
 

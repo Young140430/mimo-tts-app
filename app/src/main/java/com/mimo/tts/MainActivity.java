@@ -207,6 +207,12 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        // For voicedesign mode, context is required as voice description
+        if (Constants.TTS_MODE_VOICEDESIGN.equals(ttsMode) && (context == null || context.isEmpty())) {
+            Toast.makeText(this, "音色设计模式需要在设置中填写风格描述（音色描述）", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // Stop any current playback
         audioPlayer.stop();
         playbackCard.setVisibility(View.GONE);

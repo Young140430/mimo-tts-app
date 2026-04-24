@@ -2956,6 +2956,7 @@ drawable ic_settings
 drawable ic_stop
 drawable ic_upload
 drawable ic_visibility
+drawable ic_visibility_off
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
