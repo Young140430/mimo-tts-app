@@ -1,0 +1,4 @@
+com.mimo.tts.test.app-androidTest-0 E:\VoxCPM2\app5\app\build\generated\res\resValues\androidTest\debug
+com.mimo.tts.test.app-mergeDebugAndroidTestResources-1 E:\VoxCPM2\app5\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.mimo.tts.test.app-mergeDebugAndroidTestResources-2 E:\VoxCPM2\app5\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.mimo.tts.test.app-merged_res-3 E:\VoxCPM2\app5\app\build\intermediates\merged_res\debugAndroidTest
